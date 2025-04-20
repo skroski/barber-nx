@@ -24,6 +24,13 @@ export default [
           style: 'kebab-case',
         },
       ],
+      '@angular-eslint/component-class-suffix': [
+        'error',
+        {
+          suffixes: ['Component', 'Page', 'Dialog'],
+        },
+      ],
+      '@angular-eslint/no-empty-lifecycle-method': 'off',
     },
   },
   {
