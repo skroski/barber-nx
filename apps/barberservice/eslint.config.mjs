@@ -1,40 +1,40 @@
-import nx from '@nx/eslint-plugin';
-import baseConfig from '../../eslint.config.mjs';
+import nx from "@nx/eslint-plugin";
+import baseConfig from "../../eslint.config.mjs";
 
 export default [
   ...baseConfig,
-  ...nx.configs['flat/angular'],
-  ...nx.configs['flat/angular-template'],
+  ...nx.configs["flat/angular"],
+  ...nx.configs["flat/angular-template"],
   {
-    files: ['**/*.ts'],
+    files: ["**/*.ts"],
     rules: {
-      '@angular-eslint/directive-selector': [
-        'error',
+      "@angular-eslint/directive-selector": [
+        "error",
         {
-          type: 'attribute',
-          prefix: 'mb',
-          style: 'camelCase',
+          type: "attribute",
+          prefix: "mb",
+          style: "camelCase",
         },
       ],
-      '@angular-eslint/component-selector': [
-        'error',
+      "@angular-eslint/component-selector": [
+        "error",
         {
-          type: 'element',
-          prefix: 'mb',
-          style: 'kebab-case',
+          type: "element",
+          prefix: "mb",
+          style: "kebab-case",
         },
       ],
-      '@angular-eslint/component-class-suffix': [
-        'error',
+      "@angular-eslint/component-class-suffix": [
+        "error",
         {
-          suffixes: ['Component', 'Page', 'Dialog'],
+          suffixes: ["Component", "Page", "Dialog", "Layout"],
         },
       ],
-      '@angular-eslint/no-empty-lifecycle-method': 'off',
+      "@angular-eslint/no-empty-lifecycle-method": "off",
     },
   },
   {
-    files: ['**/*.html'],
+    files: ["**/*.html"],
     // Override or add rules here
     rules: {},
   },
