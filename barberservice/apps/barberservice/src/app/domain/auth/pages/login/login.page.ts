@@ -6,4 +6,5 @@ import { Component } from '@angular/core';
   standalone: true,
   template: `<p>Teste</p>`,
 })
+// eslint-disable-next-line prettier/prettier
 export class LoginPage { }
