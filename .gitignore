@@ -1,0 +1,53 @@
+# Node
+node_modules/
+npm-debug.log
+yarn-error.log
+pnpm-lock.yaml
+
+# NX Cache e Output
+dist/
+tmp/
+.nx/
+.cache/
+
+# Compilados Angular
+*.js
+*.js.map
+*.tsbuildinfo
+
+# IDEs
+.vscode/
+.idea/
+
+# MacOS
+.DS_Store
+
+# Testes e cobertura
+coverage/
+*.lcov
+
+# Ambiente
+.env
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+*.log.*
+
+# Browserslist
+.browserslistrc
+
+# Storybook
+.storybook-out/
+storybook-static/
+
+# Playwright / Cypress
+test-results/
+.playwright/
+cypress/screenshots/
+cypress/videos/
+
+# NX Report
+nx-report.html
